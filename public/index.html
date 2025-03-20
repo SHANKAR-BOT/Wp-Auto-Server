@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Auto Sender - YOUR NAME</title>
+</head>
+<body>
+  <h1>WhatsApp Auto Sender - YOUR NAME</h1>
+
+  <button onclick="generateQR()">Pair WhatsApp (QR Code)</button>
+  <div id="qr-container"></div>
+  <div id="pair-status"></div>
+
+  <form id="upload-form" enctype="multipart/form-data">
+    <label>Upload creds.json:</label><input type="file" name="creds"><br>
+    <label>Target Number (with country code):</label><input type="text" id="targetNumber"><br>
+    <label>Message:</label><input type="text" id="message"><br>
+    <label>Time Interval (seconds):</label><input type="number" id="interval"><br>
+    <button type="button" onclick="startSending()">Start</button>
+  </form>
+
+  <div id="start-response"></div>
+
+  <h3>Stop Server</h3>
+  <input type="text" id="stopKey" placeholder="Enter stop key">
+  <button onclick="stopServer()">Stop</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
