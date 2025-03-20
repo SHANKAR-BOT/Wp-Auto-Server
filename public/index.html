@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>WhatsApp Auto Sender - YOUR NAME</title>
+  <link rel="stylesheet" href="style.css"> <!-- ✅ Linking style.css -->
 </head>
 <body>
+
   <h1>WhatsApp Auto Sender - YOUR NAME</h1>
 
   <button onclick="generateQR()">Pair WhatsApp (QR Code)</button>
@@ -12,10 +14,18 @@
   <div id="pair-status"></div>
 
   <form id="upload-form" enctype="multipart/form-data">
-    <label>Upload creds.json:</label><input type="file" name="creds"><br>
-    <label>Target Number (with country code):</label><input type="text" id="targetNumber"><br>
-    <label>Message:</label><input type="text" id="message"><br>
-    <label>Time Interval (seconds):</label><input type="number" id="interval"><br>
+    <label>Upload creds.json:</label>
+    <input type="file" name="creds"><br>
+
+    <label>Target Number (with country code):</label>
+    <input type="text" id="targetNumber"><br>
+
+    <label>Message:</label>
+    <input type="text" id="message"><br>
+
+    <label>Time Interval (seconds):</label>
+    <input type="number" id="interval"><br>
+
     <button type="button" onclick="startSending()">Start</button>
   </form>
 
